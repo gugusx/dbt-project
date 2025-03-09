@@ -207,3 +207,19 @@ Happy modeling!
 [0m23:42:11.149596 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x79f847e6a330>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x79f8485af740>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x79f847ca5d60>]}
 [0m23:42:11.150161 [debug] [MainThread]: Flushing usage events
 [0m23:42:12.824715 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m01:52:26.445265 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x75b8b3e6d310>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x75b8b37ab3b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x75b8b3389cd0>]}
+
+
+============================== 01:52:26.456781 | df10c35f-5658-4591-a93d-b1ab8a626d7b ==============================
+[0m01:52:26.456781 [info ] [MainThread]: Running with dbt=1.9.3
+[0m01:52:26.457922 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/root/.dbt', 'version_check': 'True', 'debug': 'False', 'log_path': 'logs', 'fail_fast': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'log_format': 'default', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt docs serve', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m01:52:26.458645 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /home/gugus/Documents/portfolio-gugus/dbt-project/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m01:52:26.462261 [debug] [MainThread]: Resource report: {"command_name": "serve", "command_success": false, "command_wall_clock_time": 0.15582159, "process_in_blocks": "21848", "process_kernel_time": 0.357031, "process_mem_max_rss": "87640", "process_out_blocks": "8", "process_user_time": 2.696898}
+[0m01:52:26.463171 [debug] [MainThread]: Command `dbt docs serve` failed at 01:52:26.462978 after 0.16 seconds
+[0m01:52:26.464016 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x75b8b376fa40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x75b8b36d7290>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x75b8b3c3b1a0>]}
+[0m01:52:26.465003 [debug] [MainThread]: Flushing usage events
+[0m01:52:28.035733 [debug] [MainThread]: An error was encountered while trying to flush usage events

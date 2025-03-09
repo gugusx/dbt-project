@@ -82,6 +82,9 @@ To access from your browser, navigate to: http://localhost:8080
 ![alt text](dashboard.png)
 
 
+### Lineage Graph
+![alt text](<Lineage Graph.png>)
+
 
 
 
