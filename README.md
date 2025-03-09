@@ -1,17 +1,17 @@
-### A.Pre-Requirements:
-1. PostgreSQL Container
-2. DBT
-3. (Optional) Metabase Container
+### A. Pre-Requirements:
+1. **Postgres Image**
+2. **DBT**
+3. **(Optional) Metabase Image**
 
 
-### B.Setup for PostgreSQL Container
+### B. Setup for PostgreSQL Container
 1. Pull from **https://hub.docker.com/**, I'm using version 12
 ![alt text](<postgres.png>)
 2. Run PostgreSQL Container (can customize based on your need)
 `docker run --name postgres-dbt -e POSTGRES_USER=dbt_test -e POSTGRES_PASSWORD=dbt_12345## -e POSTGRES_DB=pos_system -p 1234:5432 -d postgres:12`
 
 
-### C.Installing DBT
+### C. Installing DBT
 1. Create Python new virtual environemnt: `python3 -m venv dbt-env`
 2. Activate Virtual Environment: `source dbt-env/bin/activate`
 3. Install DBT libraries: 
@@ -20,7 +20,7 @@
     - check version to ensure dbt and postgres are installed: ` dbt --version`
 
 
-### D.Setup Schema, Tables and Records in PostgreSQL container
+### D. Setup Schema, Tables and Records in PostgreSQL container
 1. Run PostgreSQL container as a bash:
 `docker exec -it postgres-dbt bash`
 2. Login into Database:
@@ -33,7 +33,7 @@ check schema tables:
 5. Create schema for DBT (Data Build Tool) using **dbt_schema.sql**.
 
 
-### E.Setup DBT for Transformation
+### E. Setup DBT for Transformation
 1. Initiate DBT project: `dbt init`
 ![alt text](dbt_init.png)
 2. Copy **profiles.yml** and store into dbt project (data_warehouse).
@@ -41,7 +41,7 @@ check schema tables:
 4. Enter into DBT project path: data_warehouse then check connection dbt to postgres: `dbt debug`. Ensure all checks passed.
 
 
-### F.Data Modelling (STAR Schema)
+### F. Data Modelling (STAR Schema)
 1. In data_warehouse/models/, create new driectory named raw, intermediate and dwh. 
     - `mkdir -p models/raw`
     - `mkdir -p models/intermediate`
@@ -53,7 +53,7 @@ check schema tables:
 6. Customize data_warehouse/dbt_project.yml
 
 
-### G.Build DBT
+### G. Build DBT
 - `dbt clean`
 - `dbt run`
 - `dbt docs generate`
