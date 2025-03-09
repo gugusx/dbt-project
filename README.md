@@ -64,6 +64,23 @@ To access from your browser, navigate to: http://localhost:8080
 ![alt text](result.png)
 
 
+### (Optional) How to Display the output using Metabase
+1. Pull metabase container: `docker pull metabase/metabase`
+2. Run metabase container
+    - `docker run -d -p 3000:3000 --name metabase --link postgres-dbt:postgres metabase/metabase`
+![alt text](metabase.png)
+3. Configure metabase to connect to ostgreSQL, open http://localhost:3000 in browser.
+![alt text](config_metabase.png)
+    - Database Type: PostgreSQL
+    - Name: (Choose a name for your database connection, e.g., "Postgres DB")
+    - Host: postgres (this is the alias for the PostgreSQL container since we used the --link option).
+    - Port: 5432 (the default port for PostgreSQL inside the container).
+    - Database Name: pos_system (your specified database).
+    - Username: dbt_test (the username you specified).
+    - Password: dbt_12345## (the password you specified).
+4. Result.
+![alt text](dashboard.png)
+
 
 
 
