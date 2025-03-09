@@ -8,7 +8,7 @@ Setup in Source Server (in here, I'm using postgresql)
 I'm using PostgreSQL container. Here the setup.
 Setup for PostgreSQL Container
 1. Pull from https://hub.docker.com/, I'm using version 12
-![alt text](<Screenshot from 2025-03-09 16-38-53.png>)
+![alt text](<postgres.png>)
 
 
 Setup for DBT
