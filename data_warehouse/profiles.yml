@@ -1,0 +1,12 @@
+datawarehouse_profile:
+  outputs:
+    dev:
+      dbname: pos_system
+      host: localhost
+      pass: dbt_12345##
+      port: 1234
+      schema: global
+      threads: 1
+      type: postgres
+      user: dbt_test
+  target: dev

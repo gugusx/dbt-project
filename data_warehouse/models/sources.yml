@@ -1,0 +1,13 @@
+version: 2
+
+sources:
+  - name: global
+    database: pos_system
+    schema: global
+    tables:
+      - name: location
+      - name: product_type
+      - name: product
+      - name: customer
+      - name: sales
+      - name: sales_detail
