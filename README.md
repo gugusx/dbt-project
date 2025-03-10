@@ -54,9 +54,9 @@ check schema tables:
 
 
 ### G. Build DBT
-- `dbt clean`
-- `dbt run`
-- `dbt docs generate`
+1. `dbt clean`
+2. `dbt run`
+3. `dbt docs generate`
 
 **Display UI**
 - `dbt docs serve`
