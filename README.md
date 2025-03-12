@@ -20,7 +20,7 @@
 3. Install DBT libraries.
     - `pip3 install dbt-core`
     - `pip3 install dbt-postgres`
-    - (to ensure dbt are installed) `dbt --version`
+    - `dbt --version` (to ensure dbt are installed)
 
 
 ### D. Setup Schema, Tables and Records in PostgreSQL container
@@ -30,8 +30,7 @@
     - `psql -U dbt_test -d pos_system`
 3. Create new table (**ddl.sql**), to ensure the tables are created.
     - `\dt global.*`
-check schema tables.
-    - `\d global.table_name`
+    - `\d global.table_name` (check schema tables)
 4. Insert record using **dml.sql**
 5. Create schema for DBT (Data Build Tool) using **dbt_schema.sql**.
 
